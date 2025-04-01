@@ -5,9 +5,9 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import pandas as pd
 
-# Configuração do WebDriver
-service = Service(r'C:\chromedriver-win64\chromedriver.exe')
-driver = webdriver.Chrome(service=service)
+# Caminho do WebDriver do Edge
+service = Service(r'C:\Driver_Notes\msedgedriver.exe') 
+driver = webdriver.Edge(service=service)
 
 # Lista de links dos produtos
 links_produtos = [
